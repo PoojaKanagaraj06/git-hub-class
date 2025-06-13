@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoiceTask Calendar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>VoiceTask Calendar</h1>
+
+        <div class="input-area">
+            <textarea id="textInput" placeholder="Enter task (e.g., 'Pay bills tomorrow at 5pm')"></textarea>
+            <div class="buttons">
+                <button id="submitTextBtn">Add Task by Text</button>
+                <button id="recordVoiceBtn">Add Task by Voice</button>
+            </div>
+        </div>
+
+        <div id="messageArea" class="message-area"></div>
+
+        <div class="tasks-section">
+            <h2>Tasks</h2>
+            <ul id="taskDisplay" class="task-list">
+                <!-- Tasks will be dynamically added here -->
+            </ul>
+        </div>
+
+        <div class="events-section">
+            <h2>Upcoming Events</h2>
+            <ul id="eventDisplay" class="event-list">
+                <!-- Upcoming events will be dynamically added here -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
